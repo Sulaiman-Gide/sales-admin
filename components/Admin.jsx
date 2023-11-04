@@ -119,7 +119,7 @@ const Sidebar = ({ children }) => {
   );
   return (
     <div className='w-full flex h-screen overflow-y-hidden bg-gray-50 dark:bg-gray-900'>
-      <div className='hidden sm:flex flex-col w-[230px] dark:bg-gray-900 h-[98vh] my-auto rounded-md bg-white overflow-y-auto py-2 px-3 border-[1px] dark:border-gray-700'>
+      <div className='hidden sm:flex flex-col w-[230px] dark:bg-gray-900 h-[98vh] ml-2 my-auto rounded-md bg-white overflow-y-auto py-2 px-3 border-[1px] dark:border-gray-700'>
         <div onClick={handleDashboard} className='flex justify-start items-center w-full bg-gray-900 hover:bg-gray-500 dark:bg-blue-900 dark:hover:bg-blue-800 cursor-pointer p-3 rounded-md mt-5'>
           <RxDashboard size={20} className='text-gray-50 dark:text-gray-50'/>
           <h1 className='text-gray-50 dark:text-gray-50 text-lg ml-3 font-semibold'>Dashboard</h1>

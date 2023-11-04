@@ -12,19 +12,16 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ice Hub</title>
-        <meta name='description' content='Ice Hub' />
+        <title>Sales Admin</title>
+        <meta name='description' content='Sales Admin By Sulaiman Gide' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href='/photo-1.avif' />
+        <link rel='icon' href='/gg.png' />
       </Head>
       <main className='dark:bg-gray-900 h-screen overflow-y-auto select-none'>
         <section className={`${login ? "h-full w-full" : "hidden"}`}>
           <Login />
         </section>
         <section className={`${admin ? "h-full w-full" : "hidden"}`}>
-          <div className='items-center justify-center hidden'>
-            <h1>Screen too small, transfer to a bigger device/viewport</h1>
-          </div>
           <Admin />    
         </section>
       </main>
