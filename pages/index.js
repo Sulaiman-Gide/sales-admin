@@ -17,7 +17,7 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/gg.png' />
       </Head>
-      <main className='dark:bg-gray-900 h-screen overflow-y-auto select-none'>
+      <main className='dark:bg-gray-900 h-[100svh] sm:h-screen overflow-y-auto select-none'>
         <section className={`${login ? "h-full w-full" : "hidden"}`}>
           <Login />
         </section>

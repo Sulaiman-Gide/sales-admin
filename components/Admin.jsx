@@ -84,7 +84,7 @@ const Sidebar = ({ children }) => {
         className='text-2xl font-bold my-3 mr-3 dark:text-white'
         style={{ float: 'right' }}
       />
-      <div className='flex flex-col w-full dark:bg-gray-900 h-screen overflow-y-auto py-2 px-3 border-r-[1px] dark:border-gray-700'>
+      <div className='flex flex-col w-full dark:bg-gray-900 h-[100svh] overflow-y-auto py-2 px-3 border-r-[1px] dark:border-gray-700'>
         <div onClick={handleDashboard} className='flex justify-start items-center w-full bg-gray-900 hover:bg-gray-500 dark:bg-blue-900 dark:hover:bg-blue-800 cursor-pointer p-3 rounded-md mt-3'>
           <RxDashboard size={20} className='text-gray-50 dark:text-gray-50'/>
           <h1 className='text-gray-50 dark:text-gray-50 text-lg ml-3 font-semibold'>Dashboard</h1>
@@ -118,7 +118,7 @@ const Sidebar = ({ children }) => {
     </Box>
   );
   return (
-    <div className='w-full flex h-screen overflow-y-hidden bg-gray-50 dark:bg-gray-900'>
+    <div className='w-full flex h-[100svh] overflow-y-hidden bg-gray-50 dark:bg-gray-900'>
       <div className='hidden sm:flex flex-col w-[230px] dark:bg-gray-900 h-[98vh] ml-2 my-auto rounded-md bg-white overflow-y-auto py-2 px-3 border-[1px] dark:border-gray-700'>
         <div onClick={handleDashboard} className='flex justify-start items-center w-full bg-gray-900 hover:bg-gray-500 dark:bg-blue-900 dark:hover:bg-blue-800 cursor-pointer p-3 rounded-md mt-5'>
           <RxDashboard size={20} className='text-gray-50 dark:text-gray-50'/>
@@ -159,7 +159,7 @@ const Sidebar = ({ children }) => {
         >
           <div className='flex justify-between items-center px-6 pt-4 pb-2'>
             <div className='sm:hidden'>
-              {['top'].map((anchor) => (
+              {['bottom'].map((anchor) => (
                 <React.Fragment key={anchor}>
                   <GiHamburgerMenu onClick={toggleDrawer(anchor, true)} className="text-2xl dark:text-white hover:opacity-50"/>
                   <SwipeableDrawer
